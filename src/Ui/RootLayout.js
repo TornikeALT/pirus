@@ -3,10 +3,11 @@ import Navigation from '../components/Navigation'
 
 
 function RootLayout() {
-    return (<>
-        <Navigation />
-        <Outlet />
-    </>)
+    return (
+        <>
+            <Navigation />
+            <Outlet />
+        </>)
 
 }
 

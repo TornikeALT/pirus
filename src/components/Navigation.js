@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
+import pirus from '../images/pirus.png'
+import '../styles/Navigation.css'
+
 
 function Navigation() {
     return <header>
-        <div>
+        <div className="wrapper flex">
             <div>
-                <img src="" alt="" />
+                <img src={pirus} alt="pirus" className="pirus_logo" />
             </div>
             <div>
                 <nav>
-                    <ul>
+                    <ul className="flex nav_links">
                         <li>
                             <Link to="/">Home</Link>
                         </li>

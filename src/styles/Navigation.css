@@ -1,0 +1,47 @@
+.flex {
+    display: flex;
+}
+
+.wrapper {
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    animation: slideInFromTop 1s ease;
+}
+
+.pirus_logo {
+    max-width: 9rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav_links {
+    padding: 1rem;
+}
+
+.nav_links a {
+    padding: 1rem;
+    color: white;
+    transition: 0.3s;
+
+}
+
+.nav_links a:hover {
+    text-decoration: underline;
+    text-decoration-color: #66fcf1;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 1rem;
+    opacity: 0.8;
+}
+
+/* ANIMATIONS */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

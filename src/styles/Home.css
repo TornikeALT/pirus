@@ -1,0 +1,114 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem;
+}
+
+
+.bg {
+    background-image: url("../images/flamencos.jpg");
+    margin-top: 2rem;
+    background-position: -550px -250px;
+    height: 60rem;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
+.top_title {
+    color: #66fcf1;
+    font-size: 1rem;
+}
+
+.middle_title {
+    font-size: 3rem;
+    color: white;
+}
+
+.getting_started span {
+    border: 2px solid #66fcf1;
+    padding: 1.3rem 2rem;
+    color: white;
+    transition: ease-out 0.3s;
+}
+
+.getting_started span:hover {
+    border-color: #34a29b;
+    cursor: pointer;
+}
+
+.widgets {
+    color: white;
+    display: flex;
+    gap: 1rem;
+    margin-top: 13rem;
+    animation: slideInFromBottom 1s ease;
+}
+
+.widgets div {
+    background-color: rgb(13, 13, 13);
+
+}
+
+.divider_box {
+    display: flex;
+}
+
+.divider {
+    width: 20%;
+    border: 1px solid #66fcf1;
+}
+
+.widgets_content {
+    padding: 3rem 2rem;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.widgets_content h4 {
+    font-size: 2rem;
+}
+
+.widgets_content p {
+    padding-top: 1.5rem;
+}
+
+.tail {
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 4rem;
+    background-color: #66fcf1;
+
+}
+
+.widgets_content:hover {
+    border: 2px solid #66fcf1;
+    cursor: pointer;
+}
+
+.titles {
+    animation: slideInFromLeft 1s ease;
+}
+
+/* ANIMATIONS */
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
