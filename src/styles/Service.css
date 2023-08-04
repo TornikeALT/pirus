@@ -1,0 +1,162 @@
+section {
+    color: white;
+    margin-top: 5rem;
+    background-color: #0b0c10;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.service_title_wrapper {
+    padding-top: 3rem;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 8rem;
+
+}
+
+.service_box {
+    background-color: #121212;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom: 5px solid white;
+    transition: all 0.3s;
+}
+
+.service_box span {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.service_box p {
+    margin-right: 4rem;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.service_box:hover {
+    border-bottom: 5px solid #66fcf1;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #66fcf1;
+    color: black;
+}
+
+.selected:hover {
+    border-bottom: 5px solid white;
+}
+
+.line_box {
+    display: flex;
+}
+
+.horizontal_line {
+    border-bottom: 3px solid #66fcf1;
+    width: 60px;
+}
+
+.service_title {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.service_title h2 {
+    font-size: 3.5rem;
+
+}
+
+.for_clients {
+    color: #66fcf1;
+    margin-top: -1.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.animate {
+    animation: animate_from_left ease 1s;
+}
+
+.animate_2 {
+    animation: animate_from_left ease 1.3s;
+}
+
+.animate_3 {
+    animation: animate_from_bot ease 1s;
+}
+
+.vertical_line_wrapper {
+    display: flex;
+    margin-top: 7rem;
+    justify-content: center;
+}
+
+.vertical_line {
+    border-left: 3px solid #66fcf1;
+    height: 3.5rem;
+}
+
+/* Animation */
+@keyframes animate_from_left {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animate_from_bot {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Media queries */
+@media only screen and (max-width:768px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .service_box span {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+
+    .service_box p {
+        margin-right: 4rem;
+        text-align: left;
+        line-height: 1.5rem;
+    }
+
+    .line_box {
+        display: none;
+    }
+
+    .service_title_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}

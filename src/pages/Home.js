@@ -42,7 +42,7 @@ function Home() {
                             <div className='divider_box'>
                                 <span className='divider'></span>
                             </div>
-                            <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. Ut elit tellus. </p>
+                            <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. Ut  elit tellus. </p>
                         </div>
                         <div className='widgets_content animate-from-bot-3'>
                             <HiOutlineLightBulb color='aqua' size={45} />

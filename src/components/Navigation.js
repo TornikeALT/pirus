@@ -1,11 +1,20 @@
 import { Link } from "react-router-dom";
 import pirus from '../images/pirus.png'
+import { CgMenuGridR } from 'react-icons/cg'
+import { BsXLg } from 'react-icons/bs'
 import '../styles/Navigation.css'
 import { useState } from "react";
 
 
 function Navigation() {
     const [showDropDown, setShowDropDown] = useState(false)
+    const [showMenu, setShowMenu] = useState(false)
+
+
+    const handleShowMenu = () => {
+        setShowMenu(!showMenu)
+    }
+
 
     const handleDropDownMenu = () => {
         setShowDropDown(!showDropDown)
@@ -15,12 +24,12 @@ function Navigation() {
     return <header>
         <div className="wrapper flex">
             <div>
-                <a href="#">
+                <a href="/">
                     <img src={pirus} alt="pirus" className="pirus_logo" />
                 </a>
             </div>
             <div>
-                <nav>
+                <nav className="navigation">
                     <ul className="flex nav_links">
                         <li className="underline">
                             <Link to="/">Home</Link>
@@ -54,10 +63,38 @@ function Navigation() {
                             <Link to="/contact">Contact</Link>
                         </li>
                     </ul>
+                    {!showMenu && < div className="menu_icon" onClick={handleShowMenu}> <CgMenuGridR color="white" size={35} /></div>}
+                    {showMenu && <div className="cancel_menu_icon" onClick={handleShowMenu}> <BsXLg color="white" size={35} /></div>}
                 </nav>
+
             </div>
-        </div>
-    </header>
+            {
+                showMenu && <div className="vertical_menu">
+                    <nav>
+
+                        <ul>
+                            <li className="underline_full">
+                                <Link to="/services">Services</Link>
+                            </li>
+                            <li className="underline_full">
+                                <Link to="/works">Works</Link>
+                            </li>
+                            <li className="underline_full">
+                                <Link to="/about">About</Link>
+                            </li>
+                            <li className="underline_full">
+                                <Link to="/blog">Blog</Link>
+                            </li>
+                            <li className="underline_full">
+                                <Link to="/contact">Contact</Link>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            }
+        </div >
+    </header >
 }
 
 export default Navigation;

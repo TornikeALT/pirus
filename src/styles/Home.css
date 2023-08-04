@@ -1,17 +1,22 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem;
+    padding: 1rem;
 }
 
 .bg {
     background-image: url("../images/flamencos.jpg");
     margin-top: 2rem;
-    background-position: -550px -250px;
+    background-position: -550px -280px;
     height: 60rem;
     width: 100%;
     height: 100%;
-    padding-bottom: 2rem;
+
+
+}
+
+.titles {
+    margin-top: 3rem;
 }
 
 .top_title {
@@ -37,8 +42,9 @@
 }
 
 .widgets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     color: white;
-    display: flex;
     gap: 1rem;
     margin-top: 13rem;
 }
@@ -60,14 +66,19 @@
     padding: 3rem 2rem;
     border: 2px solid transparent;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
 .widgets_content h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .widgets_content p {
     padding-top: 1.5rem;
+    line-height: 2rem;
 }
 
 .tail {
@@ -134,5 +145,38 @@
     100% {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+/* Media Queries */
+@media only screen and (max-width:1020px) {
+    .bg {
+        background-position: -1100px -250px;
+
+    }
+
+    .widgets_content h4 {
+        font-size: 1.4rem;
+    }
+
+    .widgets_content p {
+        padding-top: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+
+}
+
+@media only screen and (max-width:768px) {
+    .widgets {
+        grid-template-columns: 1fr;
+    }
+
+    .widgets_content {
+        padding: 2rem 1rem;
+    }
+
+    .middle_title {
+        font-size: 2rem;
     }
 }
