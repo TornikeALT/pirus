@@ -64,7 +64,7 @@ function Service() {
     }, [animateFromBot]);
 
 
-    return <section id="service-section" ref={serviceSectionRef}>
+    return <section id="service-section" ref={serviceSectionRef} className='service_section'>
         <div className='container'>
             <div className='service_title_wrapper'>
                 <div className={`service_title ${animateFromLeft ? 'animate' : ''}`} style={{ opacity: animateFromLeft ? 1 : 0 }}>

@@ -1,11 +1,14 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import RootLayout from '../src/Ui/RootLayout'
-import Services from './pages/Services';
-import Home from './pages/Home';
-import Works from './pages/Works';
-import About from './pages/About';
-import Blog from './pages/Blog';
-import Contact from './pages/Contact';
+import ServicesPage from './pages/ServicesPage';
+import HomePage from './pages/HomePage';
+import WorksPage from './pages/WorksPage';
+import AboutPage from './pages/AboutPage';
+import BlogPage from './pages/BlogPage';
+import ContactPage from './pages/ContactPage';
+import ServiceOne from './components/ServiceOne';
+import ServiceTwo from './components/ServiceTwo';
+import ServiceThree from './components/ServiceThree';
 
 const router = createBrowserRouter([
   {
@@ -14,26 +17,38 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />
+        element: <HomePage />
       }, {
         path: '/services',
-        element: <Services />
+        element: <ServicesPage />
       }
       , {
         path: '/works',
-        element: <Works />
+        element: <WorksPage />
       }
       , {
         path: '/about',
-        element: <About />
+        element: <AboutPage />
       }
       , {
         path: '/blog',
-        element: <Blog />
+        element: <BlogPage />
       }
       , {
         path: '/contact',
-        element: <Contact />
+        element: <ContactPage />
+      }
+      , {
+        path: '/service1',
+        element: <ServiceOne />
+      }
+      , {
+        path: '/service2',
+        element: <ServiceTwo />
+      }
+      , {
+        path: '/service3',
+        element: <ServiceThree />
       }
     ]
   }

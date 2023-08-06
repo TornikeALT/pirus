@@ -1,0 +1,130 @@
+.works_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.view_all_btn {
+    font-size: 1.5rem;
+    color: white;
+    border: 1px solid aqua;
+    padding: 1rem 2rem;
+}
+
+.view_all_btn:hover {
+    border: 1px solid rgb(3, 179, 179);
+    cursor: pointer;
+}
+
+.works_title_wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.works_title_wrapper span {
+    margin-right: 1rem;
+}
+
+.works_title_wrapper h2 {
+    font-size: 3.5rem;
+    color: white;
+}
+
+.things_we_made {
+    margin-top: -1.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: aqua;
+}
+
+.works_section {
+    background-color: #121212;
+    padding: 5rem 0rem;
+}
+
+.image_gallery {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.images {
+    transition: 0.3s all ease-in-out;
+    overflow: hidden;
+}
+
+.image_gallery img {
+    max-width: 410px;
+    min-height: auto;
+    width: 100%;
+}
+
+.enlarge {
+    transform: scale(1.4);
+    z-index: 10;
+}
+
+.shrink {
+    transform: scale(0.9);
+    z-index: 2;
+}
+
+.img_content {
+    position: relative;
+    color: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.img_content span {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.img_content:hover {
+    color: white;
+}
+
+/* Media queries */
+@media only screen and (max-width:768px) {
+    .works_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+
+    .works_container h2 {
+        font-size: 2.4rem
+    }
+
+    .view_all_btn {
+        font-size: 1rem
+    }
+
+    .works_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_content span {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .img_content span {
+        font-size: 0.5rem;
+    }
+}

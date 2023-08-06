@@ -1,14 +1,15 @@
-
 import { FaRegPaperPlane } from 'react-icons/fa'
 import { PiBrainLight } from 'react-icons/pi'
 import { HiOutlineLightBulb } from 'react-icons/hi'
 import '../styles/Home.css'
 import Service from '../components/Service'
+import StretchingImages from '../components/StretchingImages'
+import About from '../components/About'
 
 
 
 
-function Home() {
+function HomePage() {
     return <>
         <section>
             <div className='bg'>
@@ -59,7 +60,9 @@ function Home() {
 
         </section>
         <Service />
+        <StretchingImages />
+        <About />
     </>
 }
 
-export default Home;
+export default HomePage;

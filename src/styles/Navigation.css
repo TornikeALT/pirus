@@ -55,7 +55,16 @@
 
 }
 
-.underline:hover {
+.nav_links a:hover {
+    text-decoration: underline;
+    text-decoration-color: #66fcf1;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 1rem;
+    opacity: 0.8;
+
+}
+
+.nav_links a.active {
     text-decoration: underline;
     text-decoration-color: #66fcf1;
     text-decoration-thickness: 4px;
@@ -74,7 +83,16 @@
     width: 100%;
 }
 
-.underline_full:hover {
+.vertical_menu nav ul li a {
+    border-bottom: 2px solid transparent;
+}
+
+.vertical_menu nav ul li a.active {
+    border-bottom: 2px solid #66fcf1;
+    cursor: pointer;
+}
+
+.vertical_menu nav ul li a:hover {
     border-bottom: 2px solid #66fcf1;
     opacity: 0.7;
     cursor: pointer;
@@ -82,6 +100,10 @@
 
 .dropdown {
     position: relative;
+}
+
+.dropdown a:hover {
+    text-decoration: none;
 }
 
 .dropdown_menu {
