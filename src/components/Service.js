@@ -1,79 +1,25 @@
-import { useState, useEffect, useRef } from 'react'
 import '../styles/Service.css'
 import { BsBarChart, BsPencil, BsGlobe, BsBookmark } from 'react-icons/bs'
 import { HiUsers } from 'react-icons/hi'
 import { FaUncharted } from 'react-icons/fa'
+import useIntersectionObserver from '../hooks/useIntersectionObserver'
+
 
 
 function Service() {
-    const serviceSectionRef = useRef(null);
-    const bottomLineRef = useRef(null)
-    const [animateFromLeft, setAnimateFromLeft] = useState(false);
-    const [animateFromBot, setAnimateFromBot] = useState(false)
+    const { currentRef: ref1, animate: animate1 } = useIntersectionObserver(0.2)
+    const { currentRef: ref2, animate: animate2 } = useIntersectionObserver(0.8)
 
-    // Observer For Left Animation
-    useEffect(() => {
-        const currentRefValue = serviceSectionRef.current;
-        const sectionObserver = new IntersectionObserver(
-            (entries) => {
-                const entry = entries[0];
-                if (entry.isIntersecting && !animateFromLeft) {
-                    setAnimateFromLeft(true);
-                    sectionObserver.unobserve(entry.target);
-
-                }
-            },
-            { threshold: 0.2 }
-        );
-
-        if (currentRefValue) {
-            sectionObserver.observe(currentRefValue);
-        }
-
-        return () => {
-            if (currentRefValue) {
-                sectionObserver.unobserve(currentRefValue);
-            }
-        };
-    }, [animateFromLeft]);
-
-    // Observer For Bottom Animation
-    useEffect(() => {
-        const currentBotRefValue = bottomLineRef.current
-        const bottomLineObserver = new IntersectionObserver(
-            (entries) => {
-                const entry = entries[0];
-                if (entry.isIntersecting && !animateFromBot) {
-                    setAnimateFromBot(true);
-                    bottomLineObserver.unobserve(entry.target);
-
-                }
-            },
-            { threshold: 0.8 }
-        );
-
-        if (currentBotRefValue) {
-            bottomLineObserver.observe(currentBotRefValue);
-        }
-
-        return () => {
-            if (currentBotRefValue) {
-                bottomLineObserver.unobserve(currentBotRefValue);
-            }
-        };
-    }, [animateFromBot]);
-
-
-    return <section id="service-section" ref={serviceSectionRef} className='service_section'>
+    return <section id="service-section" ref={ref1} className='service_section'>
         <div className='container'>
             <div className='service_title_wrapper'>
-                <div className={`service_title ${animateFromLeft ? 'animate' : ''}`} style={{ opacity: animateFromLeft ? 1 : 0 }}>
+                <div className={`service_title ${animate1 ? 'animate' : ''}`} style={{ opacity: animate1 ? 1 : 0 }}>
                     <div className="line_box">
                         <span className='horizontal_line'></span>
                     </div>
                     <h2>Services.</h2>
                 </div>
-                <p className={`for_clients ${animateFromLeft ? 'animate_2' : ''}`} style={{ opacity: animateFromLeft ? 1 : 0 }}>OUR SERVICES FOR CLIENTS</p>
+                <p className={`for_clients ${animate1 ? 'animate_2' : ''}`} style={{ opacity: animate1 ? 1 : 0 }}>OUR SERVICES FOR CLIENTS</p>
             </div>
 
             <div className='services'>
@@ -108,7 +54,7 @@ function Service() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id arcu luctus.</p>
                 </div>
             </div>
-            <div className={`vertical_line_wrapper ${animateFromBot ? 'animate_3' : ''}`} style={{ opacity: animateFromBot ? 1 : 0 }} ref={bottomLineRef}>
+            <div className={`vertical_line_wrapper ${animate2 ? 'animate_3' : ''}`} style={{ opacity: animate2 ? 1 : 0 }} ref={ref2}>
                 <span className='vertical_line'></span>
             </div>
         </div>

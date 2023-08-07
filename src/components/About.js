@@ -7,7 +7,7 @@ import '../styles/About.css'
 
 function About() {
     const serviceSectionRef = useRef();
-    const bottomLineRef = useRef();
+
     const topicsRef = useRef()
     const [animateFromLeft, setAnimateFromLeft] = useState(false);
     const [animateFromBot, setAnimateFromBot] = useState(false)
