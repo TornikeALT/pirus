@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-function useIntersectionObserver(threshold = 2) {
+function useIntersectionObserver(threshold = 1) {
     const [animate, setAnimate] = useState(false)
     const currentRef = useRef(null)
 
