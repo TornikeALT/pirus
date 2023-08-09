@@ -1,0 +1,122 @@
+.carousel_container {
+    background-color: #121212;
+    padding: 5rem 1rem;
+    color: white;
+}
+
+.carousel_items {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel_item {
+    padding: 40px 40px 0px 40px;
+    text-align: center;
+    margin: 1rem;
+    position: relative;
+    background-color: #0b0c10;
+    border: 1px solid #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel_item img {
+    max-width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -35px;
+}
+
+.carousel_item ul {
+    display: flex;
+    margin-right: 2.5rem;
+
+}
+
+.carousel_item li a {
+    pointer-events: none;
+    padding: 0 5px;
+
+}
+
+.carousel_bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel_bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #45a29e66;
+    margin: 0 5px;
+    cursor: pointer;
+    margin-top: 10rem;
+}
+
+.carousel_bullet.active {
+    background-color: aqua;
+}
+
+.name_with_surname {
+    position: relative;
+    bottom: -7rem;
+}
+
+.testimonials_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials_wrapper span {
+    margin-right: 1rem;
+}
+
+.testimonials_wrapper h2 {
+    font-size: 3.5rem;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 5.5rem;
+    flex-wrap: wrap;
+}
+
+.icons img {
+    max-width: 3.5rem;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+    .testimonials_wrapper {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .testimonials_wrapper h2 {
+        font-size: 2.4rem;
+        color: white;
+    }
+
+    .things_we_made {
+        text-align: center;
+    }
+}

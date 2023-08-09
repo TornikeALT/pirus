@@ -4,6 +4,7 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    padding: 1rem;
 }
 
 .view_all_btn {
