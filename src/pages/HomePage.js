@@ -6,6 +6,7 @@ import Service from '../components/Service'
 import StretchingImages from '../components/StretchingImages'
 import About from '../components/About'
 import Carousel from '../components/Carousel'
+import NewsToRead from '../components/NewsToRead'
 
 
 
@@ -66,6 +67,7 @@ function HomePage() {
             <StretchingImages />
             <About />
             <Carousel />
+            <NewsToRead />
         </>
     )
 }
