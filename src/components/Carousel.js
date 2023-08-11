@@ -55,82 +55,82 @@ function Carousel() {
     }, []);
     return (
         <section className="carousel_container" ref={ref1}>
-            <div>
-                <div style={{ marginBottom: '5rem' }} className='testimonials_container'>
-                    <div className={`testimonials_wrapper ${animate1 ? 'animate' : ''}`} style={{ opacity: animate1 ? 1 : 0 }}>
-                        <div className="line_box">
-                            <span className='horizontal_line'></span>
-                        </div>
-                        <h2>Testimonials.</h2>
-                    </div>
-                    <p className={`things_we_made ${animate1 ? 'animate_2' : ''}`} style={{ opacity: animate1 ? 1 : 0 }}>WE ARE MORE THAN DIGITAL AGENCY
-                    </p>
-                </div>
-                <div className="carousel_items">
-                    {DATA.slice(activeIndex, activeIndex + itemsPerSlide).map((item, index) => (  //
-                        <div key={index} className="carousel_item">
-                            <PiQuotes color="#66fcf15e" size={40} />
-                            <p>{item.text}</p>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <a href="">
-                                            <AiFillStar color="#fec42d" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <AiFillStar color="#fec42d" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/">
-                                            <AiFillStar color="#fec42d" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <AiFillStar color="#fec42d" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <AiFillStar color="#fec42d" />
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <img src={item.img} alt={index} />
-                            <div className="name_with_surname">
-                                <h3 >{item.name}</h3>
-                                <span>Designation</span>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-                <div className="carousel_bullets">
-                    {DATA.slice(0, bulletsToShow).map((_, index) => (          //controll how Many Bullets to show
-                        <div
-                            key={index}
-                            className={`carousel_bullet ${activeIndex === index ? 'active' : ''}`}
-                            onClick={() => setActiveIndex(index)}
-                        />
-                    ))}
 
+            <div style={{ marginBottom: '5rem' }} className='testimonials_container'>
+                <div className={`testimonials_wrapper ${animate1 ? 'animate' : ''}`} style={{ opacity: animate1 ? 1 : 0 }}>
+                    <div className="line_box">
+                        <span className='horizontal_line'></span>
+                    </div>
+                    <h2>Testimonials.</h2>
                 </div>
-                <div className="icons">
-                    <img src={anotherm} alt="a character" />
-                    <img src={aude} alt="like audi" />
-                    <img src={digg} alt="digg" />
-                    <img src={shark} alt="shark" />
-                    <img src={lines} alt="lines" />
-                    <img src={m} alt="m character" />
-                    <img src={a} alt="a character" />
-                </div>
-                <div ref={ref2} className={`vertical_line_wrapper ${animate2 ? 'animate_3' : ''}`} style={{ opacity: animate2 ? 1 : 0 }} >
-                    <span className='vertical_line'></span>
-                </div>
+                <p className={`things_we_made ${animate1 ? 'animate_2' : ''}`} style={{ opacity: animate1 ? 1 : 0 }}>WE ARE MORE THAN DIGITAL AGENCY
+                </p>
             </div>
+            <div className="carousel_items">
+                {DATA.slice(activeIndex, activeIndex + itemsPerSlide).map((item, index) => (  //
+                    <div key={index} className="carousel_item">
+                        <PiQuotes color="#66fcf15e" size={40} />
+                        <p>{item.text}</p>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="/#">
+                                        <AiFillStar color="#fec42d" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/#">
+                                        <AiFillStar color="#fec42d" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/#">
+                                        <AiFillStar color="#fec42d" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/#">
+                                        <AiFillStar color="#fec42d" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/#">
+                                        <AiFillStar color="#fec42d" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src={item.img} alt={index} />
+                        <div className="name_with_surname">
+                            <h3 >{item.name}</h3>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            <div className="carousel_bullets">
+                {DATA.slice(0, bulletsToShow).map((_, index) => (          //controll how Many Bullets to show
+                    <div
+                        key={index}
+                        className={`carousel_bullet ${activeIndex === index ? 'active' : ''}`}
+                        onClick={() => setActiveIndex(index)}
+                    />
+                ))}
+
+            </div>
+            <div className="icons">
+                <img src={anotherm} alt="a character" />
+                <img src={aude} alt="like audi" />
+                <img src={digg} alt="digg" />
+                <img src={shark} alt="shark" />
+                <img src={lines} alt="lines" />
+                <img src={m} alt="m character" />
+                <img src={a} alt="a character" />
+            </div>
+            <div ref={ref2} className={`vertical_line_wrapper ${animate2 ? 'animate_3' : ''}`} style={{ opacity: animate2 ? 1 : 0 }} >
+                <span className='vertical_line'></span>
+            </div>
+
         </section>
     );
 };

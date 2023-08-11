@@ -10,7 +10,7 @@ import useIntersectionObserver from '../hooks/useIntersectionObserver'
 
 
 
-function StretchingImages() {
+function Testimonials() {
     const { currentRef: ref1, animate: animate1 } = useIntersectionObserver(0.2);
     const { currentRef: ref2, animate: animate2 } = useIntersectionObserver(0.8)
     const [hoverImage, setHoverImage] = useState(null);
@@ -73,6 +73,6 @@ function StretchingImages() {
     )
 }
 
-export default StretchingImages;
+export default Testimonials;
 
 

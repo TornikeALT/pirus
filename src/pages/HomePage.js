@@ -3,10 +3,11 @@ import { PiBrainLight } from 'react-icons/pi'
 import { HiOutlineLightBulb } from 'react-icons/hi'
 import '../styles/Home.css'
 import Service from '../components/Service'
-import StretchingImages from '../components/StretchingImages'
 import About from '../components/About'
 import Carousel from '../components/Carousel'
 import NewsToRead from '../components/NewsToRead'
+import Testimonials from '../components/Testimonials'
+import Footer from '../components/Footer'
 
 
 
@@ -64,10 +65,11 @@ function HomePage() {
 
             </section>
             <Service />
-            <StretchingImages />
+            <Testimonials />
             <About />
             <Carousel />
             <NewsToRead />
+            <Footer />
         </>
     )
 }

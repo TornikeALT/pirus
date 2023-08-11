@@ -79,6 +79,7 @@
 
 .topics p {
     color: #c6c6c6;
+    padding: unset;
 }
 
 .topics div {
