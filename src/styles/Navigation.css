@@ -10,6 +10,20 @@
     animation: slideInFromTop 1s ease;
 }
 
+.header {
+    background-position: center;
+
+}
+
+.main_title {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+
 .menu_icon {
     display: none;
     cursor: pointer;

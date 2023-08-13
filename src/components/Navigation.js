@@ -1,15 +1,21 @@
-import { Link, NavLink } from "react-router-dom";
-import pirus from '../images/pirus.png'
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { useState } from "react";
 import { CgMenuGridR } from 'react-icons/cg'
 import { BsXLg } from 'react-icons/bs'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
+import pirus from '../images/pirus.png'
 import '../styles/Navigation.css'
-import { useState } from "react";
+import aboutbg from '../images/workingplace.jpg'
+import tatoogirl from '../images/tatoogirl.jpg'
+import painting from '../images/painting.jpg'
+import blog from '../images/blog.jpg'
+import contact from '../images/contact.jpg'
 
 
 function Navigation() {
     const [showDropDown, setShowDropDown] = useState(false)
     const [showMenu, setShowMenu] = useState(false)
+    const location = useLocation()
 
     const handleShowMenu = () => {
         setShowMenu(!showMenu)
@@ -19,8 +25,55 @@ function Navigation() {
         setShowDropDown(!showDropDown)
     }
 
+    const getBackgroundImage = () => {
+        let backgroundImage = '';
+        let paddingBottom = 0;
+        let title;
+
+        if (location.pathname === '/') {
+            backgroundImage = '';
+            paddingBottom = 0;
+        }
+        if (location.pathname === '/about') {
+            backgroundImage = aboutbg;
+            paddingBottom = '9rem';
+            title = "About Us."
+        }
+        if (location.pathname === '/services') {
+            backgroundImage = tatoogirl;
+            paddingBottom = '9rem';
+            title = "Services"
+        }
+        if (location.pathname === '/works') {
+            backgroundImage = painting;
+            paddingBottom = '9rem';
+            title = "Our works."
+        }
+        if (location.pathname === '/blog') {
+            backgroundImage = blog;
+            paddingBottom = '9rem';
+            title = "Blog."
+        }
+        if (location.pathname === '/contact') {
+            backgroundImage = contact;
+            paddingBottom = '9rem';
+            title = "Contact us."
+        }
+
+
+
+        return { backgroundImage, paddingBottom, title }
+    }
+    const { backgroundImage, paddingBottom, title } = getBackgroundImage()
+
+    const headerBackGround = {
+        backgroundImage: `url(${backgroundImage})`,
+        paddingBottom,
+    }
+
+
     return (
-        <header>
+        <header style={headerBackGround} className="header">
             <div className="wrapper flex">
                 <div>
                     <a href="/">
@@ -111,6 +164,7 @@ function Navigation() {
                     </div>
                 }
             </div >
+            <h1 className="main_title">{title}</h1>
         </header >
     )
 }

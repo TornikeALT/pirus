@@ -7,7 +7,7 @@ import About from '../components/About'
 import Carousel from '../components/Carousel'
 import NewsToRead from '../components/NewsToRead'
 import Testimonials from '../components/Testimonials'
-import Footer from '../components/Footer'
+
 
 
 
@@ -69,7 +69,6 @@ function HomePage() {
             <About />
             <Carousel />
             <NewsToRead />
-            <Footer />
         </>
     )
 }

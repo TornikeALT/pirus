@@ -9,7 +9,7 @@ function Footer() {
     const { currentRef: ref2, animate: animate2 } = useIntersectionObserver(0.8)
     const { currentRef: ref3, animate: animate3 } = useIntersectionObserver(0.8)
     return (
-        <footer>
+        <section>
             <div className="footer_wrapper">
                 <div className="inquiry">
                     <div className={`footer_vertical_line_wrapper ${animate1 ? 'animate_3' : ''}`} style={{ opacity: animate1 ? 1 : 0 }} ref={ref1}>
@@ -156,8 +156,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-
-        </footer >
+        </section >
     );
 }
 
@@ -166,4 +165,3 @@ export default Footer;
 
 
 
-// linkebis hover da hrefebi, Contactis iconcebi daamate da responisve
