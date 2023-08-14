@@ -36,27 +36,27 @@ function Navigation() {
         }
         if (location.pathname === '/about') {
             backgroundImage = aboutbg;
-            paddingBottom = '9rem';
+            paddingBottom = '5.5rem';
             title = "About Us."
         }
         if (location.pathname === '/services') {
             backgroundImage = tatoogirl;
-            paddingBottom = '9rem';
+            paddingBottom = '5.5rem';
             title = "Services"
         }
         if (location.pathname === '/works') {
             backgroundImage = painting;
-            paddingBottom = '9rem';
+            paddingBottom = '5.5rem';
             title = "Our works."
         }
         if (location.pathname === '/blog') {
             backgroundImage = blog;
-            paddingBottom = '9rem';
+            paddingBottom = '5.5rem';
             title = "Blog."
         }
         if (location.pathname === '/contact') {
             backgroundImage = contact;
-            paddingBottom = '9rem';
+            paddingBottom = '5.5';
             title = "Contact us."
         }
 
@@ -164,7 +164,7 @@ function Navigation() {
                     </div>
                 }
             </div >
-            <h1 className="main_title">{title}</h1>
+            <h2 className="main_title">{title}</h2>
         </header >
     )
 }

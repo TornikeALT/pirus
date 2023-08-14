@@ -239,3 +239,9 @@
         padding-top: 2rem;
     }
 }
+
+@media only screen and (max-width:278px) {
+    .social_icons ul {
+        flex-direction: column;
+    }
+}

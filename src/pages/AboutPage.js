@@ -1,6 +1,8 @@
 function AboutPage() {
 
-    return <h2 style={{ color: 'white' }}>avoe</h2>
+    return (
+        'about'
+    )
 }
 
 export default AboutPage;
