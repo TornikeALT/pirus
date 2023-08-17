@@ -1,0 +1,74 @@
+.skills_section {
+    background-color: #121212;
+    color: white;
+    padding: 8rem 0;
+
+}
+
+.progress_container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10rem;
+}
+
+.progress_container h3 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+.title_and_percentage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress_item {
+    text-align: center;
+    width: 400px;
+}
+
+.progress_bar {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress_fill {
+    height: 100%;
+    background-color: aqua;
+    transition: width 2s ease;
+}
+
+.skills_wrapper {
+    display: flex;
+    align-items: las;
+    gap: 2rem;
+}
+
+.phone_image {
+    max-width: 550px;
+}
+
+.thousand_projects {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first_span {
+    color: #ffffff;
+    background-color: #66fcf1b5;
+    padding: 70px 40px;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.second_span {
+    margin-top: -4rem;
+    font-weight: 900;
+}

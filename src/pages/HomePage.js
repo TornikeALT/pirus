@@ -9,10 +9,6 @@ import NewsToRead from '../components/NewsToRead'
 import Testimonials from '../components/Testimonials'
 
 
-
-
-
-
 function HomePage() {
     return (
         <>

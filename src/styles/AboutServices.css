@@ -1,0 +1,22 @@
+.about_services_section {
+    background-color: #0b0c10;
+    color: white;
+    padding-bottom: 5rem;
+}
+
+.about_services_wrapper {
+    display: flex;
+}
+
+.about_services_grid_item {
+    padding: 3rem;
+
+}
+
+.about_services_grid_item p {
+    color: #c6c6c6;
+}
+
+.about_services_grid_item h4 {
+    font-size: 1.2rem;
+}

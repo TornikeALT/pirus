@@ -41,8 +41,11 @@
     padding: 1rem;
 }
 
-.news_card h3,
-p {
+.news_card h3 {
+    padding: 1rem;
+}
+
+.news_card_para {
     padding: 1rem;
 }
 

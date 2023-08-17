@@ -19,25 +19,25 @@ function NewsToRead() {
                     <article className='news_card'>
                         <img src={vrwoman} alt="woman with vr" />
                         <h3>Could this VR sketching tool be coming of age for designers in the future?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque ornare tincidunt....</p>
+                        <p className='news_card_para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque ornare tincidunt....</p>
                         <div className='read_more_wrapper'>
-                            <a href="">Read More</a>
+                            <a href="/#">Read More</a>
                         </div>
                     </article>
                     <article className='news_card'>
                         <img src={buildings} alt="buildings from above" />
                         <h3>8 Cities That Show You What The Future Will Look Like (Innovative Ideas)</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque ornare tincidunt....</p>
+                        <p className='news_card_para'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque ornare tincidunt....</p>
                         <div className='read_more_wrapper'>
-                            <a href="">Read More</a>
+                            <a href="/#">Read More</a>
                         </div>
                     </article>
                     <article className='news_card'>
                         <img src={envelope} alt="envelope with thanks" />
                         <h3>15 Gift Ideas for Mom and Dad. Wherever They Are This Year</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque ornare tincidunt....</p>
+                        <p className='news_card_para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque ornare tincidunt....</p>
                         <div className='read_more_wrapper'>
-                            <a href="">Read More</a>
+                            <a href="/#">Read More</a>
                         </div>
                     </article>
                 </div>
