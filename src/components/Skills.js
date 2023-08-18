@@ -2,16 +2,14 @@ import '../styles/Skills.css'
 import useIntersectionObserver from '../hooks/useIntersectionObserver'
 import phoneTwo from '../images/phone-2.jpg'
 
-function Skills() {
 
+function Skills() {
     const percentages = [{ title: 'UI DESIGN', percentage: 90 },
     { title: 'UX DESIGN', percentage: 60 },
     { title: 'DIGITAL MARKETING', percentage: 80 },
     { title: 'SOCIAL MEDIA', percentage: 70 }
     ];
     const { currentRef, animate } = useIntersectionObserver(0.8)
-
-
 
     return (
         <section className="skills_section" ref={currentRef}>
