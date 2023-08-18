@@ -1,0 +1,123 @@
+.our_team_section {
+    background-color: #121212;
+    color: white;
+    padding: 2rem 1rem 12rem 1rem;
+
+}
+
+.members_socials {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2.3rem;
+    transition: transform 0.3s ease;
+}
+
+.members_socials svg:hover {
+    color: aqua;
+    cursor: pointer;
+    animation: bounce 0.5s ease 1;
+}
+
+.team_members_wrapper {
+    display: flex;
+    gap: 1rem
+}
+
+.team_members_wrapper img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.member {
+    position: relative;
+}
+
+.members_overlay h4 {
+    margin: unset;
+    padding: 8px;
+}
+
+.members_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: opacity 0.3s ease, height 0.3s ease;
+    padding-bottom: 3rem;
+}
+
+.members_overlay:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.animate_image_appear_one {
+    animation: image_appear ease-in 1s;
+}
+
+.animate_image_appear_two {
+    animation: image_appear ease-in 2s;
+}
+
+.animate_image_appear_three {
+    animation: image_appear ease-in 2.5s;
+}
+
+.animate_image_appear_four {
+    animation: image_appear ease-in 3s;
+}
+
+.animate_image_appear_five {
+    animation: image_appear ease-in 3.5s;
+}
+
+.animate_icons_shake:hover {
+    animation: icons_shake ease 0.3s;
+}
+
+
+/* ANIMATIONS */
+@keyframes image_appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Start and end at original position */
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* Move up */
+    }
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width:768px) {
+    .team_members_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team_members_wrapper img {
+        max-width: 700px;
+    }
+}

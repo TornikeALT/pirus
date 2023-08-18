@@ -1,5 +1,6 @@
 import AboutServices from "../components/AboutServices";
 import BusinessSolutions from "../components/BusinessSolutions";
+import OurTeam from "../components/OurTeam";
 import Skills from "../components/Skills";
 
 function AboutPage() {
@@ -9,6 +10,7 @@ function AboutPage() {
             <AboutServices />
             <Skills />
             <BusinessSolutions />
+            <OurTeam />
         </>
     )
 }

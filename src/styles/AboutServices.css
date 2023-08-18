@@ -20,3 +20,10 @@
 .about_services_grid_item h4 {
     font-size: 1.2rem;
 }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width:768px) {
+    .about_services_wrapper {
+        flex-direction: column;
+    }
+}

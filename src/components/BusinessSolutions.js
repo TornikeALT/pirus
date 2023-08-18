@@ -16,7 +16,7 @@ function BusinessSolutions() {
                         <img src={macbook} alt="macbook" />
                     </div>
                     <div className='business_solutions_right_box' style={{ opacity: animate1 ? 1 : 0 }}>
-                        <h3 className={`${animate1 ? 'business_solutions_animate_title' : ''}`} ref={ref1}>Best Solutions for <br /> Your Business</h3>
+                        <h3 className={`${animate1 ? 'business_solutions_animate_title' : ''}`} ref={ref1}>Best Solutions for  Your Business</h3>
                         <p className={`${animate2 ? 'business_solutions_animate_content' : ''}`} ref={ref2} style={{ opacity: animate2 ? 1 : 0 }}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet urna quis odio vehicula consectetur. Donec eu gravida diam. Aenean accumsan nisl sed fringilla sollicitudin. Donec tincidunt quis dolor eget consectetur. Suspendisse a mollis lacus.
                         </p>

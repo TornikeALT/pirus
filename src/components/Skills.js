@@ -9,14 +9,14 @@ function Skills() {
     { title: 'DIGITAL MARKETING', percentage: 80 },
     { title: 'SOCIAL MEDIA', percentage: 70 }
     ];
-    const { currentRef, animate } = useIntersectionObserver(0.8)
+    const { currentRef, animate } = useIntersectionObserver(0.4)
 
     return (
         <section className="skills_section" ref={currentRef}>
             <div className='container'>
                 <div className='skills_wrapper'>
                     <div className="progress_container">
-                        <h3>
+                        <h3 className={`${animate ? 'progress_title_animate' : ''}`} style={{ opacity: animate ? 1 : 0 }}>
                             Here are some of our great skills
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id arcu luctus, pellentesque lorem ac, pharetra sapien.</p>
