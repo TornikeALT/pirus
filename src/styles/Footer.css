@@ -238,10 +238,18 @@
         margin-bottom: 3rem;
         padding-top: 2rem;
     }
+
+    .project_in_mind h2 {
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (max-width:278px) {
     .social_icons ul {
         flex-direction: column;
+    }
+
+    .pirus {
+        max-width: 100px;
     }
 }

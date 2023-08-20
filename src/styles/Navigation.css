@@ -208,4 +208,8 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .pirus_logo {
+        max-width: 5rem;
+    }
 }

@@ -1,5 +1,10 @@
+import BlogNews from "../components/BlogNews";
+
 function BlogPage() {
-    return 'blog'
+    return (
+        <>
+            <BlogNews />
+        </>)
 }
 
 export default BlogPage;
