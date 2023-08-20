@@ -1,5 +1,12 @@
+import Contact from "../components/Contact";
+import MessageForm from "../components/MessageForm";
+
 function ContactPage() {
-    return 'contact'
+    return (<>
+        <Contact />
+        <MessageForm />
+
+    </>)
 }
 
 export default ContactPage;

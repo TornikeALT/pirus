@@ -56,7 +56,7 @@ function Navigation() {
         }
         if (location.pathname === '/contact') {
             backgroundImage = contact;
-            paddingBottom = '5.5';
+            paddingBottom = '5.5rem';
             title = "Contact us."
         }
 

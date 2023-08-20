@@ -1,0 +1,43 @@
+.contact_section {
+    background-color: #0b0c10;
+    color: white;
+    padding-bottom: 7rem;
+}
+
+.contact_info {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+
+}
+
+.side_borders {
+    border-right: 1px solid aqua;
+    border-left: 1px solid aqua;
+    padding: 1.5rem 5rem;
+}
+
+.contact_info_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contacts_title {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.contacts_title h2 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.contacts_title p {
+    font-size: 1rem;
+    color: #66fcf1;
+}
