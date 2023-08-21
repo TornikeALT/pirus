@@ -41,3 +41,32 @@
     font-size: 1rem;
     color: #66fcf1;
 }
+
+.contact_info_item p {
+    padding-bottom: 10px;
+    color: gray;
+}
+
+@media only screen and (max-width:864px) {
+    .side_borders {
+        padding: 1rem 2.5rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .side_borders {
+        padding: 1rem 2rem;
+    }
+
+    .contact_info {
+        flex-direction: column;
+    }
+
+    .side_borders {
+        border: none;
+    }
+
+    .contacts_title h2 {
+        font-size: 2.7rem;
+    }
+}

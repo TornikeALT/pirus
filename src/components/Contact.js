@@ -18,20 +18,20 @@ function Contact() {
                     <div className='contact_info_item'>
                         <BsFillTelephoneFill size={40} color='aqua' />
                         <h4>PHONE</h4>
-                        <span>+1 234 567 890</span><br />
-                        <span>+0 987 654 321</span>
+                        <p>+1 234 567 890</p>
+                        <p>+0 987 654 321</p>
                     </div>
                     <div className='contact_info_item side_borders'>
                         <IoMdPin size={40} color='aqua' />
                         <h4>ADDRESS</h4>
-                        <span>Lorem ipsum dolor sit amet,</span><br />
-                        <span>consectetur adipiscing elit.</span>
+                        <p>Lorem ipsum dolor sit amet,</p>
+                        <p>consectetur adipiscing elit.</p>
                     </div>
                     <div className='contact_info_item'>
                         <CiMail size={40} color='aqua' />
                         <h4>EMAIL</h4>
-                        <span>anymail@mail.com</span><br />
-                        <span>officialmail@mail.com</span>
+                        <p>anymail@mail.com</p>
+                        <p>officialmail@mail.com</p>
                     </div>
                 </div>
             </div>

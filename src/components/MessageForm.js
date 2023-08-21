@@ -23,7 +23,7 @@ function MessageForm() {
                         <input type="text" placeholder='Email' />
                         <input type="text" placeholder='Subject' />
                     </div>
-                    <textarea placeholder='You Message' cols="50" rows="10"></textarea>
+                    <textarea placeholder='You Message' cols="30" rows="5"></textarea>
                     <div className='message_form_btn'>
                         <button>SEND MESSAGE</button>
                     </div>
