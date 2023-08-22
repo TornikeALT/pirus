@@ -111,6 +111,13 @@
 }
 
 /* MEDIA QUERIES */
+
+@media only screen and (max-width:898px) {
+    .members_overlay h4 {
+        font-size: 12px;
+    }
+}
+
 @media only screen and (max-width:768px) {
     .team_members_wrapper {
         flex-direction: column;

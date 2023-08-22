@@ -10,6 +10,25 @@
     padding: 1rem;
 }
 
+.about_title_wrapper {
+    padding: 3rem 0;
+}
+
+.about_title {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.about_title h2 {
+    font-size: 3.5rem;
+    color: white;
+}
+
+
+
+
 .full-height-image {
     flex: 1;
     display: flex;

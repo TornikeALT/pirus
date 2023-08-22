@@ -1,0 +1,28 @@
+.our_service_section {
+    color: white;
+    background-color: #0b0c10;
+    padding-bottom: 5rem;
+}
+
+
+.our_service_title {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.our_service_title h2 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.our_service_title p {
+    font-size: 1rem;
+    color: #66fcf1;
+}
+
+@media only screen and (max-width:768px) {
+    .our_service_title h2 {
+        font-size: 2.5rem;
+    }
+}

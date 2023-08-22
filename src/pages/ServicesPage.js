@@ -1,5 +1,14 @@
+import OurServices from "../components/OurServices";
+import WorkSkills from "../components/WorkSkills";
+
+
+
 function ServicesPage() {
-    return 'services'
+    return (
+        <>
+            <OurServices />
+            <WorkSkills />
+        </>)
 }
 
 export default ServicesPage;

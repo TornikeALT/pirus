@@ -14,8 +14,8 @@ function About() {
     return (
         <section ref={ref1} className="about_section">
             <div className="container">
-                <div className='service_title_wrapper'>
-                    <div className={`service_title ${animate1 ? 'animate' : ''}`} style={{ opacity: animate1 ? 1 : 0 }}>
+                <div className='about_title_wrapper'>
+                    <div className={`about_title ${animate1 ? 'animate' : ''}`} style={{ opacity: animate1 ? 1 : 0 }}>
                         <div className="line_box">
                             <span className='horizontal_line'></span>
                         </div>
