@@ -26,4 +26,9 @@
     .about_services_wrapper {
         flex-direction: column;
     }
+
+    .about_services_grid_item {
+        text-align: center;
+        font-size: 14px;
+    }
 }

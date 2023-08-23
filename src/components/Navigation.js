@@ -84,35 +84,32 @@ function Navigation() {
                     <nav className="navigation">
                         <ul className="flex nav_links">
                             <li className="underline">
-                                <NavLink to="/">Home</NavLink>
+                                <NavLink to="/">HOME</NavLink>
                             </li>
                             <li onMouseEnter={() => handleDropDownMenu(true)} onMouseLeave={() => handleDropDownMenu(false)} className="dropdown underline">
-                                <NavLink to="/services">Services</NavLink>
+                                <NavLink to="/services">SERVICES</NavLink>
                                 {showDropDown && (
                                     <ul className="dropdown_menu">
                                         <li>
-                                            <Link to="/service1">Service 1</Link>
+                                            <Link to="/service1">SERVICE 1</Link>
                                         </li>
                                         <li>
-                                            <Link to="/service2">Service 2</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/service3">Service 3</Link>
+                                            <Link to="/service2">SERVICE 2</Link>
                                         </li>
                                     </ul>
                                 )}
                             </li>
                             <li className="underline">
-                                <NavLink to="/works">Works</NavLink>
+                                <NavLink to="/works">WORKS</NavLink>
                             </li>
                             <li className="underline">
-                                <NavLink to="/about">About</NavLink>
+                                <NavLink to="/about">ABOUT</NavLink>
                             </li>
                             <li className="underline">
-                                <NavLink to="/blog">Blog</NavLink>
+                                <NavLink to="/blog">BLOG</NavLink>
                             </li>
                             <li className="underline">
-                                <NavLink to="/contact">Contact</NavLink>
+                                <NavLink to="/contact">CONTACT</NavLink>
                             </li>
                         </ul>
                         {!showMenu && < div className="menu_icon" onClick={handleShowMenu}> <CgMenuGridR color="white" size={35} /></div>}
@@ -139,9 +136,6 @@ function Navigation() {
                                             </li>
                                             <li>
                                                 <NavLink to="/service2">Service 2</NavLink>
-                                            </li>
-                                            <li>
-                                                <NavLink to="/service3">Service 3</NavLink>
                                             </li>
                                         </ul>
                                     )}

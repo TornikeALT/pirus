@@ -36,7 +36,7 @@ function HomePage() {
                                 <div className='divider_box'>
                                     <span className='divider'></span>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. Ut elit tellus. </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus. </p>
                             </div>
                             <div className='widgets_content animate-from-bot-2' style={{ border: '1px solid aqua' }}>
                                 <PiBrainLight color='aqua' size={45} />
@@ -44,7 +44,7 @@ function HomePage() {
                                 <div className='divider_box'>
                                     <span className='divider'></span>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. Ut  elit tellus. </p>
+                                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Ut  elit tellus. </p>
                             </div>
                             <div className='widgets_content animate-from-bot-3'>
                                 <HiOutlineLightBulb color='aqua' size={45} />
@@ -52,7 +52,7 @@ function HomePage() {
                                 <div className='divider_box'>
                                     <span className='divider'></span>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit. Ut elit tellus. </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus. </p>
                             </div>
                         </div>
                         <span className='tail'></span>

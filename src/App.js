@@ -8,7 +8,7 @@ import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
 import ServiceOne from './components/ServiceOne';
 import ServiceTwo from './components/ServiceTwo';
-import ServiceThree from './components/ServiceThree';
+
 
 const router = createBrowserRouter([
   {
@@ -45,10 +45,6 @@ const router = createBrowserRouter([
       , {
         path: '/service2',
         element: <ServiceTwo />
-      }
-      , {
-        path: '/service3',
-        element: <ServiceThree />
       }
     ]
   }

@@ -25,7 +25,7 @@
 
 .service_box {
     background-color: #121212;
-    padding: 3rem 2rem;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -35,12 +35,12 @@
 
 .service_box span {
     margin-top: 1rem;
-    font-size: 1.7rem;
-    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .service_box p {
-    margin-right: 4rem;
+    max-width: 13rem;
     text-align: left;
     line-height: 2rem;
 }
@@ -148,7 +148,7 @@
     }
 
     .service_box p {
-        margin-right: 4rem;
+        max-width: unset;
         text-align: left;
         line-height: 1.5rem;
     }

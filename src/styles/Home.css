@@ -75,6 +75,7 @@
 }
 
 .widgets_content p {
+    max-width: 13rem;
     padding-top: 1.5rem;
     line-height: 2rem;
 }
@@ -176,5 +177,9 @@
 
     .middle_title {
         font-size: 2rem;
+    }
+
+    .widgets_content p {
+        max-width: unset;
     }
 }

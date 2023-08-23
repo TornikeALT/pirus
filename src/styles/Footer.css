@@ -253,4 +253,8 @@
     .pirus {
         max-width: 100px;
     }
+
+    .social_icons svg {
+        margin: 0.5rem
+    }
 }
