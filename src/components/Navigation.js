@@ -1,5 +1,5 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { CgMenuGridR } from 'react-icons/cg'
 import { BsXLg } from 'react-icons/bs'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
@@ -10,12 +10,18 @@ import tatoogirl from '../images/tatoogirl.jpg'
 import painting from '../images/painting.jpg'
 import blog from '../images/blog.jpg'
 import contact from '../images/contact.jpg'
+import aboutbgsmall from '../images/workingplace-small.jpg'
+import tatoogirlsmall from '../images/tatoogirl-small.jpg'
+import paintingsmall from '../images/painting-small.jpg'
+import blogsmall from '../images/blog-small.jpg'
+import contactsmall from '../images/contact-small.jpg'
 
 
 function Navigation() {
-    const [showDropDown, setShowDropDown] = useState(false)
-    const [showMenu, setShowMenu] = useState(false)
-    const location = useLocation()
+    const [showDropDown, setShowDropDown] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
+    const [largeImageLoaded, setLargeImageLoaded] = useState(false);
+    const location = useLocation();
 
     const handleShowMenu = () => {
         setShowMenu(!showMenu)
@@ -27,6 +33,7 @@ function Navigation() {
 
     const getBackgroundImage = () => {
         let backgroundImage = '';
+        let backgroundImageSmall = ''
         let paddingBottom = 0;
         let title;
 
@@ -36,38 +43,51 @@ function Navigation() {
         }
         if (location.pathname === '/about') {
             backgroundImage = aboutbg;
+            backgroundImageSmall = aboutbgsmall;
             paddingBottom = '5.5rem';
             title = "About Us."
         }
         if (location.pathname === '/services') {
             backgroundImage = tatoogirl;
+            backgroundImageSmall = tatoogirlsmall;
             paddingBottom = '5.5rem';
             title = "Services"
         }
         if (location.pathname === '/works') {
             backgroundImage = painting;
+            backgroundImageSmall = paintingsmall;
             paddingBottom = '5.5rem';
             title = "Our works."
         }
         if (location.pathname === '/blog') {
             backgroundImage = blog;
+            backgroundImageSmall = blogsmall;
             paddingBottom = '5.5rem';
             title = "Blog."
         }
         if (location.pathname === '/contact') {
             backgroundImage = contact;
+            backgroundImageSmall = contactsmall;
             paddingBottom = '5.5rem';
             title = "Contact us."
         }
 
-
-
-        return { backgroundImage, paddingBottom, title }
+        return { backgroundImage, paddingBottom, title, backgroundImageSmall }
     }
-    const { backgroundImage, paddingBottom, title } = getBackgroundImage()
+    const { backgroundImage, paddingBottom, title, backgroundImageSmall } = getBackgroundImage();
+
+    useEffect(() => {
+        const largeImage = new Image();
+        largeImage.onload = () => {
+            setLargeImageLoaded(true);
+        };
+        largeImage.src = backgroundImage; // Load the large image
+
+    }, [backgroundImage]);
 
     const headerBackGround = {
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: largeImageLoaded ? `url(${backgroundImage})` : `url(${backgroundImageSmall})`,
+        backgroundSize: largeImageLoaded ? 'cover' : '100% auto',
         paddingBottom,
     }
 
